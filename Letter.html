@@ -13,16 +13,21 @@
             margin: 0;
             
             /* Centering Logic */
-            min-height: 100vh;       /* Use min-height to allow scrolling on long text */
+            min-height: 100vh;       /* Full height */
             display: flex;           /* Use Flexbox */
             justify-content: center; /* Center horizontally */
-            align-items: center;     /* Center vertically */
+            /* Vertical alignment removed so we can control top spacing manually */
         }
 
         /* This container handles the margins and width */
         .container {
             max-width: 700px;        /* Restricts width for readability */
-            padding: 40px 20px;      /* Adds space top/bottom and left/right */
+            padding: 20px;           /* Side padding */
+            
+            /* THIS MAKES IT START IN THE MIDDLE */
+            padding-top: 35vh;       /* Pushes text down 35% of the screen height */
+            padding-bottom: 20vh;    /* Adds space at the bottom for scrolling */
+            
             line-height: 1.6;        /* Makes the text easier to read */
             font-size: 1.1rem;       /* Slightly larger than default text */
         }
@@ -40,13 +45,16 @@
         .signature {
             margin-top: 3rem;
             font-style: italic;
+            text-align: right;       /* Aligns signature to the right */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <p>Why do all beautiful things have to come to an end…? Maybe it's because only by ending can their beauty be preserved in time.
+        <p>
+            Why do all beautiful things have to come to an end…? Maybe it's because only by ending can their beauty be preserved in time.
+        </p>
 
         <p>Remember when we started talking back in May? Yeah. It was a heck of a good time. Spending time with you was so much fun, it also felt rather new, and we were nervous because we didn’t know each other that well… yet. We used ChatGPT to come up with random questions and we’d talk as friends.</p>
 
@@ -70,9 +78,9 @@
 
         <p>I wish us to still be friends. I hope you have a happy life after all. I hope we can still have a lot of fun together. I wish we can still meet up one day in the future, in America.</p> 
 
-        <div class="p">
+        <p>
             Alex Lin<br>
-            Jan 13, 2025.
+            Jan 13, 2026.
         </div>
     </div>
 
